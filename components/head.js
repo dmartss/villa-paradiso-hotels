@@ -1,5 +1,5 @@
 import NextHead from 'next/head'
-import { defaultOgImage } from '@lib/constants'
+import { defaultOgImage } from 'lib/constants'
 
 export default function Head({
   title = 'Villa Paradiso',

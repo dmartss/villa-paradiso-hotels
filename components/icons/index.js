@@ -1,0 +1,7 @@
+export { default as Arrow } from './arrow'
+export { default as Directory } from './directory'
+export { default as Download } from './download'
+export { default as File } from './file'
+export { default as Logo } from './logo'
+export { default as Search } from './search'
+export { default as LogoBig } from './logo-big'

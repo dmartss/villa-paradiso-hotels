@@ -1,6 +1,6 @@
-import '@styles/global.css'
+import 'styles/global.css'
 import Router from 'next/router'
-import { pageView as gTagPageView } from '@lib/gtag'
+import { pageView as gTagPageView } from 'lib/gtag'
 import NProgress from 'nprogress'
 import { useEffect } from 'react'
 
