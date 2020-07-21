@@ -1,0 +1,11 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--gap-double);
+}
+
+.content {
+  margin: var(--big-gap) var(--big-gap) 0 0;
+}
