@@ -1,3 +1,4 @@
+import { Facebook, Instagram, Twitter } from '../icons'
 import styles from './footer.module.css'
 
 export default function Footer() {
@@ -9,9 +10,24 @@ export default function Footer() {
           <a href={`mailto:villaparadiso@ariesliving.com`}>villaparadiso@ariesliving.com.com</a>
         </div>
 
-        <p>
-          Copyright © {`${new Date().getFullYear()}`} Aries Living YT LLC, Inc. All rights reserved.
-        </p>
+        <div className={styles.center}>
+          <span className={styles.download}>
+            <a href="/#installation" aria-label="Facebook">
+              <Facebook />
+            </a>
+            <a href="/#installation" aria-label="Twitter">
+              <Twitter />
+            </a>
+            <a href="/#installation" aria-label="Instagram">
+              <Instagram />
+            </a>
+          </span>
+
+          <p>
+            Copyright © {`${new Date().getFullYear()}`} Aries Living YT LLC, Inc. All rights
+            reserved.
+          </p>
+        </div>
 
         <div className={styles.right}>
           <p>1415 Collins Ave</p>

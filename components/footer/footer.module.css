@@ -1,11 +1,11 @@
 .root {
-  height: 100px;
+  min-height: 100px;
   z-index: 10000;
   font-size: 0.875rem;
   display: flex;
   align-items: center;
   background-color: var(--header-bg);
-  bottom: 0;
+  text-align: center;
 }
 
 .content {
@@ -15,8 +15,25 @@
   align-items: center;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .root a:hover {
   color: var(--bg);
+}
+
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.download > a {
+  display: inline-flex;
+  padding: 5px;
 }
 
 @media (max-width: 496px) {
