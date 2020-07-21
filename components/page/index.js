@@ -2,7 +2,7 @@ import Head from '../head'
 import Nav from '../nav'
 import Footer from '../footer'
 import styles from './page.module.css'
-import NAME_SHORT from '@lib/constants'
+import { NAME_SHORT } from '@lib/constants'
 
 export default function Page({ title = NAME_SHORT, description, image, children }) {
   return (
