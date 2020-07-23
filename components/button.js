@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import classNames from 'classnames'
 import css from 'styled-jsx/css'
-
 import withPure from 'components/hoc/pure'
-import LoadingDots from './loading-dots'
 
 const cachedStyles = css`
   .btn {
@@ -117,11 +115,6 @@ export default withPure(function Button({
   return (
     <button type="button" className={cachedClassNames} {...props}>
       <span className="text">{children}</span>
-      {loading && (
-        <span className="loading-dots">
-          <LoadingDots size={4} />
-        </span>
-      )}
       <style jsx>{cachedStyles}</style>
     </button>
   )

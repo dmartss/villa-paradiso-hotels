@@ -52,9 +52,9 @@ function Navbar() {
         nav {
           position: relative;
           flex: 1;
-          height: 80px;
           display: flex;
           align-items: center;
+          height: 80px;
         }
 
         .links {
@@ -72,7 +72,7 @@ function Navbar() {
         }
 
         .links a:hover {
-          color: #000;
+          color: var(--accents-1);
         }
 
         .links a.selected {
@@ -99,10 +99,6 @@ function Navbar() {
         .mobile-logo,
         .mobile-top {
           display: none;
-        }
-
-        .header-feedback {
-          display: inline-flex;
         }
 
         .book :global(a) {
@@ -156,12 +152,6 @@ function Navbar() {
 
           .book {
             margin-left: 0.5rem;
-          }
-        }
-
-        @media (max-width: 1020px) {
-          .header-feedback {
-            display: none;
           }
         }
       `}</style>

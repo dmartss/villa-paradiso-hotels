@@ -9,7 +9,9 @@ export default function Page({ title = NAME_SHORT, description, image, children 
     <div className={styles.wrapper}>
       <Head title={title} description={description} image={image} />
       <Header />
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <article>{children}</article>
+      </main>
       <Footer />
     </div>
   )
