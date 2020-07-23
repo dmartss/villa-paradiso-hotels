@@ -7,7 +7,7 @@ export default function Footer() {
       <nav className={styles.content}>
         <div className={styles.left}>
           <p>+1 (813) 575-4532</p>
-          <a href={`mailto:villaparadiso@ariesliving.com`}>villaparadiso@ariesliving.com.com</a>
+          <a href={`mailto:villaparadiso@ariesliving.com`}>villaparadiso@ariesliving.com</a>
         </div>
 
         <div className={styles.center}>
