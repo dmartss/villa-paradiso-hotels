@@ -1,4 +1,3 @@
-export { default as Arrow } from './arrow'
 export { default as Logo } from './logo'
 export { default as Instagram } from './instagram'
 export { default as Facebook } from './facebook'

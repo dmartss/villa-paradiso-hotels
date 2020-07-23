@@ -1,9 +1,9 @@
 import NextHead from 'next/head'
-import { defaultOgImage } from 'lib/constants'
+import { NAME_SHORT, NAME_LONG, PLATFORM_URL, defaultOgImage } from 'lib/constants'
 
 export default function Head({
-  title = 'Villa Paradiso',
-  description = 'Villa Paradiso Apartment Hotel, Miami Beach',
+  title = NAME_SHORT,
+  description = NAME_LONG,
   image = defaultOgImage,
   children
 }) {
@@ -22,14 +22,14 @@ export default function Head({
       <meta name="og:image" content={image} />
 
       {/* URL */}
-      <meta name="og:url" content="https://villaparadisohotels.com" />
+      <meta name="og:url" content={PLATFORM_URL} />
 
       {/* General */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@aries_living" />
-      <meta name="apple-mobile-web-app-title" content="Villa Paradiso" />
+      <meta name="apple-mobile-web-app-title" content={NAME_SHORT} />
       <meta name="author" content="Aries Living" />
 
       {/* Favicons */}

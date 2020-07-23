@@ -4,7 +4,8 @@
   font-size: 0.875rem;
   display: flex;
   align-items: center;
-  background-color: var(--header-bg);
+  justify-content: center;
+  background-color: var(--accents-1);
   text-align: center;
 }
 
@@ -12,13 +13,12 @@
   display: flex;
   flex: 1;
   justify-content: space-around;
-  align-items: center;
 }
 
 .center {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin-top: auto;
 }
@@ -37,7 +37,7 @@
   padding: 5px;
 }
 
-@media (max-width: 496px) {
+@media (max-width: 960px) {
   .root {
     position: fixed;
     left: 0;
