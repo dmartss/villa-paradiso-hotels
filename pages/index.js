@@ -3,7 +3,7 @@ import Home from 'components/home'
 
 export default function IndexPage() {
   return (
-    <Page title="Home">
+    <Page>
       <article>
         <Home />
       </article>

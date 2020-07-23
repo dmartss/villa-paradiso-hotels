@@ -11,14 +11,18 @@ export default function Footer() {
         </div>
 
         <div className={styles.center}>
-          <span className={styles.download}>
-            <a href="/#installation" aria-label="Facebook">
+          <span className={styles.social}>
+            <a
+              href="https://www.facebook.com/Aries-Living-112940767034421"
+              target="_blank"
+              aria-label="Facebook"
+            >
               <Facebook />
             </a>
-            <a href="/#installation" aria-label="Twitter">
+            <a href="https://twitter.com/aries_living" target="_blank" aria-label="Twitter">
               <Twitter />
             </a>
-            <a href="/#installation" aria-label="Instagram">
+            <a href="https://instagram.com/ariesliving" target="_blank" aria-label="Instagram">
               <Instagram />
             </a>
           </span>

@@ -20,32 +20,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: auto;
 }
 
 .root a:hover {
   color: var(--bg);
 }
 
-.download {
+.social {
   display: flex;
   align-items: center;
 }
 
-.download > a {
+.social > a {
   display: inline-flex;
   padding: 5px;
 }
 
 @media (max-width: 496px) {
   .root {
-    margin-top: 4rem;
-    min-height: 400px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .content {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    margin: 70px;
   }
 }
