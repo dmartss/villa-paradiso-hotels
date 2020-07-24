@@ -108,6 +108,11 @@ function Navbar() {
           text-shadow: 0px 0px 1px #0070f3;
         }
 
+        .links > a.logo {
+          display: flex;
+          margin: 0;
+        }
+
         a.icon,
         a.icon > :global(div.container) {
           /* Remove additional space from SVG */
