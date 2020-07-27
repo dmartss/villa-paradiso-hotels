@@ -27,30 +27,30 @@ function Navbar() {
         </div>
 
         <div className="links">
+          <div>
+            <p style={{ color: 'var(--accents-1)' }}>VILLA PARADISO</p>
+            <p style={{ color: 'var(--accents-3)' }}>apartment hotel</p>
+          </div>
           <Link href="/">
             <a className="logo">
               <Logo />
             </a>
           </Link>
-
           <Link href="/">
             <a className={cn('mute', { selected: route.startsWith('/rooms') })} title="Rooms">
               Rooms
             </a>
           </Link>
-
           <Link href="/">
             <a className={cn('mute', { selected: route.startsWith('/about') })} title="About">
               About
             </a>
           </Link>
-
           <Link href="/">
             <a className={cn('mute', { selected: route.startsWith('/photos') })} title="Photos">
               Photos
             </a>
           </Link>
-
           <div className="book">
             <Button href="/">Book</Button>
           </div>
