@@ -127,6 +127,12 @@ iframe {
 .tc {
   text-align: center;
 }
+.tr {
+  text-align: right;
+}
+.tl {
+  text-align: left;
+}
 .row {
   display: flex;
   align-items: center;
