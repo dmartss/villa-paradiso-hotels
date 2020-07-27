@@ -15,6 +15,10 @@ function Navbar() {
     <Container center>
       <nav className="f-reset">
         <div className="mobile-top">
+          <div>
+            <p style={{ color: 'var(--accents-1)' }}>VILLA PARADISO</p>
+            <p style={{ color: 'var(--accents-3)' }}>apartment hotel</p>
+          </div>
           <Link href="/">
             <a className="mobile-logo" title="Go to the homepage">
               <Logo />
@@ -27,7 +31,7 @@ function Navbar() {
         </div>
 
         <div className="links">
-          <div>
+          <div className="hotel">
             <p style={{ color: 'var(--accents-1)' }}>VILLA PARADISO</p>
             <p style={{ color: 'var(--accents-3)' }}>apartment hotel</p>
           </div>
@@ -155,6 +159,7 @@ function Navbar() {
           }
 
           nav .links .logo,
+          nav .links .hotel,
           nav .links .book {
             display: none;
           }
