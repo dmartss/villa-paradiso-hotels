@@ -1,7 +1,5 @@
 import Container from 'components/container'
-import SectionHeader from 'components/section-header'
 import rooms from 'lib/rooms'
-import { NAME_SHORT } from 'lib/constants'
 import Image from './image'
 
 const imgWidth = 300
@@ -9,15 +7,8 @@ const imgHeight = 168
 
 export default function Rooms() {
   return (
-    <Container role="main" wide dotBackground aria-labelledby="rooms">
+    <Container role="main" wide dotBackground>
       <Container center padding>
-        <SectionHeader
-          id="rooms"
-          title={`${NAME_SHORT} Rooms`}
-          description="Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Aliquam etiam erat velit scelerisque in
-          dictum."
-        />
         {rooms.map(({ name, type, occupancy, quantity, description, images }) => (
           <div className="room" key={name}>
             <h3 className="mute fw3">{name}</h3>
@@ -43,29 +34,20 @@ export default function Rooms() {
               ))}
             </div>
             <style jsx>{`
+              .room {
+                padding-bottom: 3rem;
+                border-top: 1px solid #efefef;
+              }
               .info {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
               }
-              .room {
-                padding-top: 3rem;
-                border-top: 1px solid #efefef;
-              }
+
               .images {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
               }
-               {
-                /* .images > :global(figure):nth-last-child(1):nth-child(even) {
-                grid-column: 2;
-              } */
-              }
-
-              :global(.room):last-of-type {
-                padding-bottom: 3rem;
-              }
-
               @media (max-width: 960px) {
                 .room {
                   padding-top: 1rem;
