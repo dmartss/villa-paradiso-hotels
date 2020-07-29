@@ -3,7 +3,7 @@ import rooms from 'lib/rooms'
 import Image from './image'
 
 const imgWidth = 300
-const imgHeight = 168
+const imgHeight = 200
 
 export default function Rooms() {
   return (
