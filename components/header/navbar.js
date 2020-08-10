@@ -29,10 +29,12 @@ function Navbar() {
         </div>
 
         <div className="links">
-          <div className="hotel">
-            <p style={{ color: 'var(--accents-1)' }}>{NAME_SHORT.toUpperCase()}</p>
-            <p style={{ color: 'var(--accents-3)' }}>{NAME_LONG.toLowerCase()}</p>
-          </div>
+          <Link href="/">
+            <div className="hotel">
+              <a style={{ color: 'var(--accents-1)' }}>{NAME_SHORT.toUpperCase()}</a>
+              <a style={{ color: 'var(--accents-3)' }}>{NAME_LONG.toLowerCase()}</a>
+            </div>
+          </Link>
 
           <Link href="/">
             <a className="logo">
@@ -52,6 +54,11 @@ function Navbar() {
           <Link href="/photos">
             <a className={cn('mute', { selected: route.startsWith('/photos') })} title="Photos">
               Photos
+            </a>
+          </Link>
+          <Link href="/specials">
+            <a className={cn('mute', { selected: route.startsWith('/specials') })} title="Specials">
+              Specials
             </a>
           </Link>
           <div className="book">
@@ -88,7 +95,6 @@ function Navbar() {
         }
 
         .links .hotel {
-          line-height: 0.5;
           margin-right: -2rem;
           overflow: hidden;
           white-space: nowrap;
@@ -99,8 +105,8 @@ function Navbar() {
         }
 
         .links a.selected {
-          color: var(--accents-3);
-          text-shadow: 0px 0px 1px var(--accents-3);
+          color: var(--accents-1);
+          text-shadow: 0px 0px 1px var(--accents-1);
         }
 
         .links a:first-child {
