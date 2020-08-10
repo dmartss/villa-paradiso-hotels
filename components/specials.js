@@ -39,7 +39,7 @@ export default function Home() {
             className="no-drag no-tap-highlight"
             shadow
             alt="Room 2"
-            src="/images/rooms/16/1.jpg"
+            src="/images/rooms/multi-unit/1.jpg"
             width={3000 / 6}
             height={2000 / 6}
           />
@@ -54,7 +54,7 @@ export default function Home() {
             className="no-drag no-tap-highlight"
             shadow
             alt="Room 3"
-            src="/images/rooms/18/3.jpg"
+            src="/images/rooms/19/4.jpg"
             width={2064 / 4}
             height={1376 / 4}
           />
