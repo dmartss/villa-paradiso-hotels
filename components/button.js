@@ -37,7 +37,7 @@ const cachedStyles = css`
     color: white;
   }
   .btn.invert:hover {
-    background: var(--accents-1);
+    background: var(--accents-2);
     box-shadow: 0 6px 20px rgba(0, 154, 148, 0.23);
   }
   .btn.invert:active {
