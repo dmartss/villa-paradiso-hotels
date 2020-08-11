@@ -15,8 +15,12 @@ function Navbar() {
     <Container>
       <nav className="f-reset">
         <div className="mobile-top">
-          <p className="mute">{NAME_SHORT.toUpperCase()}</p>
-          <p className="subtitle">{NAME_LONG.toLowerCase()}</p>
+          <Link href="/">
+            <a className="mute">{NAME_SHORT.toUpperCase()}</a>
+          </Link>
+          <Link href="/">
+            <a className="subtitle">{NAME_LONG.toLowerCase()}</a>
+          </Link>
           <Link href="/">
             <a className="mobile-logo" title="Go to the homepage">
               <Logo />
@@ -24,17 +28,19 @@ function Navbar() {
           </Link>
 
           <div className="book">
-            <Button href="/">Book</Button>
+            <Button href={REZTRIP_URL}>Book</Button>
           </div>
         </div>
 
         <div className="links">
-          <Link href="/">
-            <div className="hotel">
+          <div className="hotel">
+            <Link href="/">
               <a className="mute">{NAME_SHORT.toUpperCase()}</a>
+            </Link>
+            <Link href="/">
               <a className="subtitle">{NAME_LONG.toLowerCase()}</a>
-            </div>
-          </Link>
+            </Link>
+          </div>
 
           <Link href="/">
             <a className="logo">
@@ -186,9 +192,6 @@ function Navbar() {
           nav a,
           nav p {
             font-size: 12px;
-          }
-          nav .links a:nth-child(2) {
-            margin: 0;
           }
 
           .mobile-top {
