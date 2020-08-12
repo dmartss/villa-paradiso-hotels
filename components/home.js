@@ -17,12 +17,7 @@ export default function Home() {
           width={2064}
           height={1376}
         />
-        <SectionHeader
-          id="welcome"
-          title={`Welcome to ${NAME_SHORT}`}
-          className="no-drag no-tap-highlight"
-          description={TEXT[0]}
-        />
+        <SectionHeader id="welcome" title={`Welcome to ${NAME_SHORT}`} description={TEXT[0]} />
         <Section description={TEXT[1]}>
           <Image
             className="no-drag no-tap-highlight"
