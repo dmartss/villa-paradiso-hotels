@@ -72,11 +72,13 @@ body {
   background-color: var(--accents-4);
   color: var(--black);
 }
-.subtitle {
-  color: var(--accents-3);
-}
-.mute {
+
+.font-primary {
   color: var(--accents-1);
+}
+
+.font-secondary {
+  color: var(--accents-3);
 }
 
 ::selection {

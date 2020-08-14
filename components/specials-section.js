@@ -35,8 +35,8 @@ export default function SpecialsSection({ description, reverse, children, specia
       </style>
       {children}
       <div className="content">
-        <h2 className="mute fw4">{special}</h2>
-        <p className="f-reset subtitle fw4">{description}</p>
+        <h2 className="font-primary fw4">{special}</h2>
+        <p className="f-reset font-secondary fw4">{description}</p>
         <Button invert href={REZTRIP_URL}>
           Book
         </Button>

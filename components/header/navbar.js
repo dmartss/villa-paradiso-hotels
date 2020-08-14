@@ -16,10 +16,10 @@ function Navbar() {
       <nav className="f-reset">
         <div className="mobile-top">
           <Link href="/">
-            <a className="mute">{NAME_SHORT.toUpperCase()}</a>
+            <a className="font-primary">{NAME_SHORT.toUpperCase()}</a>
           </Link>
           <Link href="/">
-            <a className="subtitle">{NAME_LONG.toLowerCase()}</a>
+            <a className="font-secondary">{NAME_LONG.toLowerCase()}</a>
           </Link>
           <Link href="/">
             <a className="mobile-logo" title="Go to the homepage">
@@ -35,10 +35,10 @@ function Navbar() {
         <div className="links">
           <div className="hotel">
             <Link href="/">
-              <a className="mute">{NAME_SHORT.toUpperCase()}</a>
+              <a className="font-primary">{NAME_SHORT.toUpperCase()}</a>
             </Link>
             <Link href="/">
-              <a className="subtitle">{NAME_LONG.toLowerCase()}</a>
+              <a className="font-secondary">{NAME_LONG.toLowerCase()}</a>
             </Link>
           </div>
 
@@ -48,22 +48,34 @@ function Navbar() {
             </a>
           </Link>
           <Link href="/rooms">
-            <a className={cn('mute', { selected: route.startsWith('/rooms') })} title="Rooms">
+            <a
+              className={cn('font-primary', { selected: route.startsWith('/rooms') })}
+              title="Rooms"
+            >
               Rooms
             </a>
           </Link>
           <Link href="/about">
-            <a className={cn('mute', { selected: route.startsWith('/about') })} title="About">
+            <a
+              className={cn('font-primary', { selected: route.startsWith('/about') })}
+              title="About"
+            >
               About
             </a>
           </Link>
           <Link href="/photos">
-            <a className={cn('mute', { selected: route.startsWith('/photos') })} title="Photos">
+            <a
+              className={cn('font-primary', { selected: route.startsWith('/photos') })}
+              title="Photos"
+            >
               Photos
             </a>
           </Link>
           <Link href="/specials">
-            <a className={cn('mute', { selected: route.startsWith('/specials') })} title="Specials">
+            <a
+              className={cn('font-primary', { selected: route.startsWith('/specials') })}
+              title="Specials"
+            >
               Specials
             </a>
           </Link>
