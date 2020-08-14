@@ -73,11 +73,11 @@ body {
   color: var(--black);
 }
 
-.font-primary {
+.fp {
   color: var(--accents-1);
 }
 
-.font-secondary {
+.fs {
   color: var(--accents-3);
 }
 

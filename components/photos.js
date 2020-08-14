@@ -13,7 +13,7 @@ export default function Photos() {
           {images.map(({ src, alt }) => (
             <Image
               key={src}
-              className="no-drag no-tap-highlight"
+              className="no-drag"
               shadow
               margin={20}
               alt={alt}
