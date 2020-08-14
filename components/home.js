@@ -13,7 +13,7 @@ export default function Home() {
           className="no-drag no-tap-highlight"
           oversize={false}
           alt="Room 1"
-          src="/images/rooms/multi-unit/3.jpg"
+          src="/showcase/rooms/multi-unit/3.jpg"
           width={2064}
           height={1376}
         />
@@ -23,7 +23,7 @@ export default function Home() {
             className="no-drag no-tap-highlight"
             shadow
             alt="Room 2"
-            src="/images/rooms/16/1.jpg"
+            src="/showcase/rooms/16/1.jpg"
             width={3000 / 6}
             height={2000 / 6}
           />
@@ -33,7 +33,7 @@ export default function Home() {
             className="no-drag no-tap-highlight"
             shadow
             alt="Room 3"
-            src="/images/rooms/18/3.jpg"
+            src="/showcase/rooms/18/3.jpg"
             width={2064 / 4}
             height={1376 / 4}
           />

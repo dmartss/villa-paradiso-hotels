@@ -10,17 +10,17 @@ export default function Photos() {
     <Container role="main" wide dotBackground>
       <Container center padding>
         <div className="images">
-          {images.map(src => (
+          {images.map(({ src, alt }) => (
             <Image
               key={src}
               className="no-drag no-tap-highlight"
               shadow
               margin={20}
-              alt={src}
-              src={`/images${src}`}
-              layout="responsive"
+              alt={alt}
+              src={src}
               width={imgWidth}
               height={imgHeight}
+              layout="responsive"
             />
           ))}
 

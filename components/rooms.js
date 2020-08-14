@@ -28,7 +28,7 @@ export default function Rooms() {
                       margin={10}
                       shadow
                       alt={src}
-                      src={`/images${src}`}
+                      src={src}
                       layout="responsive"
                       width={imgWidth}
                       height={imgHeight}
