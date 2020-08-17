@@ -1,7 +1,11 @@
 {
   "name": "villa-paradiso-hotels",
-  "version": "0.1.0",
-  "private": true,
+  "description": "Villa Paradiso Homepage",
+  "repository": "dmartss/villa-paradiso-hotels",
+  "author": "Dan Martin",
+  "homepage": "https://villaparadisohotels.com",
+  "license": "MIT",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
