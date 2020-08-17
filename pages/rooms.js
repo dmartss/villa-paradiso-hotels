@@ -3,9 +3,6 @@ import Container from 'components/container'
 import rooms from 'lib/rooms'
 import Image from 'components/image'
 
-const imgWidth = 300
-const imgHeight = 200
-
 export default function Rooms() {
   return (
     <Page title="Rooms">
@@ -29,11 +26,11 @@ export default function Rooms() {
                         className="no-drag"
                         margin={10}
                         shadow
-                        alt={alt}
                         src={src}
+                        alt={alt}
                         layout="responsive"
-                        width={imgWidth}
-                        height={imgHeight}
+                        width={300}
+                        height={200}
                       />
                     ))}
                   </div>
