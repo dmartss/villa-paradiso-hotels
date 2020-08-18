@@ -7,7 +7,7 @@ import Image from 'components/image'
 export default function About() {
   return (
     <Page title="About">
-      <Container role="main" wide dotBackground>
+      <Container role="main" dotBackground>
         <Container center padding>
           <SectionHeader id="about" title={`About ${NAME_SHORT}`} description={TEXT[0]} />
           <Image
