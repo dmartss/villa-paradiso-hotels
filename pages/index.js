@@ -2,7 +2,7 @@ import Page from 'components/page'
 import Container from 'components/container'
 import SectionHeader from 'components/section-header'
 import Section from 'components/section'
-import { NAME_SHORT, TEXT } from 'lib/constants'
+import { NAME, TEXT } from 'lib/constants'
 import Image from 'components/image'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
             width={2064}
             height={1376}
           />
-          <SectionHeader id="welcome" title={`Welcome to ${NAME_SHORT}`} description={TEXT[0]} />
+          <SectionHeader id="welcome" title={`Welcome to ${NAME[0]}`} description={TEXT[0]} />
           <Section
             description={TEXT[1]}
             alt="Room 2"
