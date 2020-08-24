@@ -1,7 +1,7 @@
 import Page from 'components/page'
 import Container from 'components/container'
 import SectionHeader from 'components/section-header'
-import { NAME_SHORT, TEXT } from 'lib/constants'
+import { NAME, TEXT } from 'lib/constants'
 import Image from 'components/image'
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
     <Page title="About">
       <Container role="main" dotBackground>
         <Container center padding>
-          <SectionHeader id="about" title={`About ${NAME_SHORT}`} description={TEXT[0]} />
+          <SectionHeader id="about" title={`About ${NAME[0]}`} description={TEXT[0]} />
           <Image
             shadow
             className="no-drag"
