@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter } from '../icons'
-import { LLC, ADDRESSS, TWITTER, FACEBOOK, INSTAGRAM, EMAIL, PHONE } from 'lib/constants'
+import { LLC, ADDRESS, TWITTER, FACEBOOK, INSTAGRAM, EMAIL, PHONE } from 'lib/constants'
 import Container from 'components/container'
 import Link from 'components/link'
 import styles from './footer.module.css'
@@ -31,7 +31,7 @@ export default function Footer() {
               </span>
 
               <p className={styles.mobile}>
-                {ADDRESSS[0]} {ADDRESSS[1]}
+                {ADDRESS[0]} {ADDRESS[1]}
               </p>
               <p>
                 Copyright © {`${new Date().getFullYear()}`} {LLC}, All rights reserved.
@@ -39,8 +39,8 @@ export default function Footer() {
             </div>
 
             <div className="tr">
-              <p>{ADDRESSS[0]}</p>
-              <p>{ADDRESSS[1]}</p>
+              <p>{ADDRESS[0]}</p>
+              <p>{ADDRESS[1]}</p>
             </div>
           </nav>
         </footer>

@@ -1,6 +1,5 @@
 import { memo } from 'react'
 import Link from 'components/link'
-import { useRouter } from 'next/router'
 import cn from 'classnames'
 import { EMAIL, PHONE, NAME, REZTRIP_URL } from 'lib/constants'
 import Logo from 'components/icons/logo'
@@ -57,8 +56,6 @@ function Navbar() {
             external
             className="fp"
             href="https://ariesliving.com/terms-and-conditions/villa-paradiso"
-            target="_blank"
-            rel="noopener noreferrer"
             title="Terms"
           >
             Terms
