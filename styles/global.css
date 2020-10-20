@@ -21,8 +21,8 @@
   --accents-6: #888888;
   --accents-7: #666666;
   --accents-8: #333;
-  --white: #ffffff;
-  --black: #000000;
+  --white: #fff;
+  --black: #000;
   --header-border-bottom: 1px solid #eaeaea;
 
   /* Typography */
@@ -148,35 +148,6 @@ img {
   display: flex;
   align-items: center;
   margin: 0 -1.5rem;
-}
-.column {
-  flex: 1;
-  padding: 0 1.5rem;
-}
-.display-none {
-  display: none;
-}
-.display-mobile {
-  display: none;
-}
-.display-tablet {
-  display: none;
-}
-@media screen and (max-width: 640px) {
-  .display-mobile {
-    display: unset;
-  }
-  .hide-mobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 960px) {
-  .display-tablet {
-    display: unset;
-  }
-  .hide-tablet {
-    display: none;
-  }
 }
 a[role='button'] {
   -webkit-user-select: none;
