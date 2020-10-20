@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <Container>
-      <nav className={cn(styles['nav'], 'f-reset')}>
+      <nav className={cn(styles.nav, 'f-reset')}>
         <div className={styles['mobile-top']}>
           <Link href="/">
             <a className="fp">{NAME[0].toUpperCase()}</a>
@@ -27,13 +27,13 @@ function Navbar() {
             </a>
           </Link>
 
-          <div className={styles['book']}>
+          <div className={styles.book}>
             <Button href={REZTRIP_URL}>Book</Button>
           </div>
         </div>
 
-        <div className={styles['links']}>
-          <div className={styles['hotel']}>
+        <div className={styles.links}>
+          <div className={styles.hotel}>
             <Link href="/">
               <a className="fp">{NAME[0].toUpperCase()}</a>
             </Link>
@@ -43,7 +43,7 @@ function Navbar() {
           </div>
 
           <Link href="/">
-            <a className={styles['logo']} title="Go to the homepage">
+            <a className={styles.logo} title="Go to the homepage">
               <Logo />
             </a>
           </Link>
@@ -81,17 +81,17 @@ function Navbar() {
           </Link>
           <a
             className="fp"
-            href="https://ariesliving.com/terms-and-conditions"
+            href="https://ariesliving.com/terms-and-conditions?utm_source=villa-paradiso&utm_medium=homepage-header&utm_campaign=villa-paradiso"
             target="_blank"
             rel="noopener noreferrer"
             title="Terms"
           >
             Terms
           </a>
-          <div className={styles['book']}>
+          <div className={styles.book}>
             <Button href={REZTRIP_URL}>Book</Button>
           </div>
-          <div className={styles['icon']}>
+          <div className={styles.icon}>
             <p>{PHONE}</p>
             <a href={`mailto:${EMAIL}?subject=Hello`}>{EMAIL}</a>
           </div>
