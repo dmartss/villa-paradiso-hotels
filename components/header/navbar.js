@@ -81,7 +81,7 @@ function Navbar() {
           </Link>
           <a
             className="fp"
-            href="https://ariesliving.com/terms-and-conditions?utm_source=villa-paradiso&utm_medium=homepage-header&utm_campaign=villa-paradiso"
+            href="https://ariesliving.com/terms-and-conditions/villa-paradiso"
             target="_blank"
             rel="noopener noreferrer"
             title="Terms"
