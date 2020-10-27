@@ -23,12 +23,9 @@ export default function Rooms() {
                     {images.map(({ src, alt }) => (
                       <Image
                         key={src}
-                        className="no-drag"
-                        margin={10}
-                        shadow
+                        className="image shadow radius"
                         src={src}
                         alt={alt}
-                        layout="responsive"
                         width={300}
                         height={200}
                       />

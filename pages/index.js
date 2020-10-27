@@ -1,9 +1,9 @@
-import Page from 'components/page'
-import Container from 'components/container'
 import SectionHeader from 'components/section-header'
-import Section from 'components/section'
 import { NAME, TEXT } from 'lib/constants'
-import Image from 'components/image'
+import Container from 'components/container'
+import Section from 'components/section'
+import Image from 'next/image'
+import Page from 'components/page'
 
 export default function Home() {
   return (
@@ -11,9 +11,7 @@ export default function Home() {
       <Container role="main" wide dotBackground aria-labelledby="welcome">
         <Container center padding>
           <Image
-            shadow
-            className="no-drag"
-            oversize={false}
+            className="image shadow radius"
             alt="Room 1"
             src="/showcase/rooms/multi-unit/3.jpg"
             width={2064}
@@ -24,8 +22,8 @@ export default function Home() {
             description={TEXT[1]}
             alt="Room 2"
             src="/showcase/rooms/16/1.jpg"
-            width={3000 / 6}
-            height={2000 / 6}
+            width={2000}
+            height={1333}
           />
           <Section
             reverse
