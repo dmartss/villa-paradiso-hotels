@@ -1,6 +1,6 @@
 import { SPECIALS, DESCRIPTIONS, TEXT } from 'lib/constants'
 import SpecialsSection from './specials-section'
-import SectionHeader from 'components/section-header'
+import SectionHeader from 'components/section/section-header'
 import styles from './specials.module.css'
 
 export default function Specials() {
@@ -20,7 +20,7 @@ export default function Specials() {
         special={SPECIALS[0]}
         description={DESCRIPTIONS[0]}
         alt="Room 2"
-        src="/showcase/rooms/multi-unit/1.jpg"
+        src="/showcase-thumbnails/rooms/multi-unit/1.jpg"
       />
       <SpecialsSection
         reverse
