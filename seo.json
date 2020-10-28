@@ -1,0 +1,18 @@
+{
+  "title": "Villa Paradiso",
+  "titleTemplate": "Villa Paradiso - %s",
+  "description": "Villa Paradiso Apartment Hotel by Aries Living",
+  "canonical": "https://villaparadisohotels.com",
+  "openGraph": {
+    "type": "website",
+    "locale": "en_IE",
+    "url": "https://villaparadisohotels.com",
+    "site_name": "Villa Paradiso",
+    "description": "Villa Paradiso Apartment Hotel"
+  },
+  "twitter": {
+    "handle": "@aries_living",
+    "site": "@aries_living",
+    "cardType": "summary_large_image"
+  }
+}
