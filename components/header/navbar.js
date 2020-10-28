@@ -12,15 +12,17 @@ function Navbar() {
     <Container>
       <nav className={cn(styles.nav, 'f-reset')}>
         <div className={styles['mobile-top']}>
-          <Link href="/" className="fp">
-            {NAME[0].toUpperCase()}
-          </Link>
-          <Link href="/" className="fs">
-            {NAME[1].toLowerCase()}
-          </Link>
           <Link href="/" className={styles['mobile-logo']} title="Go to the homepage">
             <Logo />
           </Link>
+          <div className={styles['hotel-name']}>
+            <Link href="/" className="fp">
+              {NAME[0].toUpperCase()}
+            </Link>
+            <Link href="/" className="fs">
+              {NAME[1].toLowerCase()}
+            </Link>
+          </div>
 
           <div className={styles.book}>
             <Button href={REZTRIP_URL}>Book</Button>
@@ -63,9 +65,9 @@ function Navbar() {
           <div className={styles.book}>
             <Button href={REZTRIP_URL}>Book</Button>
           </div>
-          <div className={styles.icon}>
-            <p>{PHONE}</p>
-            <Link external href={`mailto:${EMAIL}?subject=Hello`}>
+          <div className={styles['text-right']}>
+            <p className="fp">{PHONE}</p>
+            <Link className="fp" external href={`mailto:${EMAIL}?subject=Hello`}>
               {EMAIL}
             </Link>
           </div>
