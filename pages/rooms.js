@@ -1,7 +1,7 @@
 import Page from 'components/page'
 import Container from 'components/container'
 import rooms from 'lib/rooms'
-import Image from 'components/image'
+import Image from 'next/image'
 
 export default function Rooms() {
   return (
