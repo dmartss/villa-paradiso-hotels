@@ -17,23 +17,16 @@ export default function RoomsPage({ images }) {
 }
 
 export const getStaticProps = () => {
+  const matches = ['1 -', '15 -', '16 -', '18 -', '19 -', 'multi-unit -']
   const images = fs
     .readdirSync('./public/showcase-thumbnails/')
     .filter(file => path.extname(file) === '.jpg')
-    .reduce(
-      (prev, curr) => [
-        ...prev,
-        ...(curr.startsWith('1 -') ||
-        curr.startsWith('15 -') ||
-        curr.startsWith('16 -') ||
-        curr.startsWith('18 -') ||
-        curr.startsWith('19 -') ||
-        curr.startsWith('multi-unit -')
-          ? [curr]
-          : [])
-      ],
-      []
-    )
+    .reduce((prev, curr) => {
+      matches.forEach(match => {
+        if (curr.includes(match)) prev.push(curr)
+      })
+      return prev
+    }, [])
 
   return {
     props: { images }
