@@ -10,8 +10,8 @@ export default function Home() {
         className="image shadow radius"
         alt="Room 1"
         src="/showcase/home-1.jpg"
-        width={2000}
-        height={1333}
+        width={2064}
+        height={1376}
         priority
       />
       <SectionHeader id="welcome" title={`Welcome to ${NAME[0]}`} description={TEXT[0]} />
